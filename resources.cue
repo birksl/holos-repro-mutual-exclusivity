@@ -42,6 +42,7 @@ import (
 	Service?: [_]:            corev1.#Service
 	ServiceAccount?: [_]:     corev1.#ServiceAccount
 	StatefulSet?: [_]:        appsv1.#StatefulSet
+	Test?: [_]:               #Test
 
 	Gateway?: [_]: gwv1.#Gateway & {
 		spec: gatewayClassName: string | *"istio"
