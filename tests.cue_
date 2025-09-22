@@ -1,0 +1,30 @@
+package holos
+
+expectSuccess: #Test & {
+	kind: "Test"
+	metadata: name:      "test"
+	metadata: namespace: "test"
+	spec: exclusiveA:    ""
+}
+
+TTT: Test: [string]: #Test
+TTT: Test: test: {
+	kind: "Test"
+	metadata: name:      "test"
+	metadata: namespace: "test"
+	spec: exclusiveB:    ""
+}
+
+// expectFailure: #Test & {
+// 	kind: "Test"
+// 	metadata: name:      "test"
+// 	metadata: namespace: "test"
+// 	spec: exclusiveA:    ""
+// 	spec: exclusiveB:    ""
+// }
+
+// expectFailure2: #Test & {
+// 	kind: "Test"
+// 	metadata: name:      "test"
+// 	metadata: namespace: "test"
+// }

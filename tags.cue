@@ -32,3 +32,4 @@ _Tags: {
 		}
 	}
 }
+enableCNP: bool @tag(cnp,type=bool)
